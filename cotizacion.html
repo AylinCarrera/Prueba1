@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Cotización</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" width="auto" height="200px">
+        <h2 class="text-center">Formulario de Cotización</h2>
+        <div class="container mt-1">
+            <ul class="text-center">
+                <a href="index.html">Inicio</a>
+
+                <a href="servicios.html">Servicios</a>
+
+                <a href="cotizacion.html">Cotiza con nosotros</a>
+
+                <a href="contacto.html">Contacto</a>
+            </ul>
+            <p>
+                Ingresa tus necesidades y preferencias para que podamos brindarte una cotización personalizada para el
+                cuidado de tu mascota. ¡Estamos aquí para ayudarte a cuidar de tu compañero peludo de la mejor manera
+                posible!
+            </p>
+            <h6 class="text-center">Al llenar el cuestionario la cotización llegará a tu correo electrónico.</h6>
+        </div>
+    </header>
+    <main class="contenedor">
+        <section>
+            <form class="container mt-3">
+                <div class="mb-3">
+                    <label>Nombre de tu mascota:</label>
+                    <input type="text" class="form-control" name="nombre" placeholder="Ingresa el nombre de tu mascota"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" class="form-control" name="fecha_nacimiento" required>
+                </div>
+                <div class="mb-3">
+                    <label>Especie:</label>
+                    <select class="form-select" name="especie" required>
+                        <option value="">Selecciona la especie de tu mascota</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="ave">Ave</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label>Seleccione su sexo :</label>
+                    <input type="radio" name="sexo" value="macho" required> Macho
+                    <input type="radio" name="sexo" value="hembra" required> Hembra
+                </div>
+                <div class="mb-3">
+                    <label>Datos extra de su mascota:</label>
+                    <textarea class="form-control" name="datos_extra"
+                        placeholder="Ingrese cualquier dato extra de su mascota como alergías o condiciones de salud"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label>Tu correo electrónico:</label>
+                    <input type="email" class="form-control" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label>Tu número de teléfono:</label>
+                    <input type="number" class="form-control" name="telefono" placeholder="912345678" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+        </section>
+    </main>
+    <footer class="text-center mt-5">
+        <p>Aylin Carrera Soto
+            <a href="https://github.com/AylinCarrera">Mi GitHub</a>
+        </p>
+    </footer>
+</body>
+
+</html>
