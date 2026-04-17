@@ -11,27 +11,27 @@
 
 <body>
     <header>
-        <img src="img/logo.png" width="auto" height="200px">
-        <h2 class="text-center">Formulario de Cotización</h2>
-        <div class="container mt-1">
-            <ul class="text-center">
-                <a href="index.html">Inicio</a>
-
-                <a href="servicios.html">Servicios</a>
-
-                <a href="cotizacion.html">Cotiza con nosotros</a>
-
-                <a href="contacto.html">Contacto</a>
+        <nav class=" navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cotizacion.html">Cotización</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
             </ul>
-            <p>
-                Ingresa tus necesidades y preferencias para que podamos brindarte una cotización personalizada para el
-                cuidado de tu mascota. ¡Estamos aquí para ayudarte a cuidar de tu compañero peludo de la mejor manera
-                posible!
-            </p>
-            <h6 class="text-center">Al llenar el cuestionario la cotización llegará a tu correo electrónico.</h6>
-        </div>
+        </nav>
     </header>
-    <main class="contenedor">
+    </div>
+    <main>
+        <h4 class="titulo">¡Obtén una cotización personalizada para tu mascota!</h4>
+        <h6 class="text-center">Al llenar el cuestionario la cotización llegará a tu correo electrónico.</h6>
         <section>
             <form class="container mt-3">
                 <div class="mb-3">
@@ -59,9 +59,10 @@
                     <input type="radio" name="sexo" value="hembra" required> Hembra
                 </div>
                 <div class="mb-3">
-                    <label>Datos extra de su mascota:</label>
+                    <label>Sintomas de su mascota:</label>
                     <textarea class="form-control" name="datos_extra"
-                        placeholder="Ingrese cualquier dato extra de su mascota como alergías o condiciones de salud"></textarea>
+                        placeholder="Incluya cualquier dato extra de su mascota como alergías o condiciones de salud"
+                        required></textarea>
                 </div>
                 <div class="mb-3">
                     <label>Tu correo electrónico:</label>
@@ -71,10 +72,11 @@
                     <label>Tu número de teléfono:</label>
                     <input type="number" class="form-control" name="telefono" placeholder="912345678" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+                <button type="submit" class="btn-veterinaria">Enviar Cotización</button>
+            </form>
         </section>
     </main>
-    <footer class="text-center mt-5">
+    <footer class="contenedor">
         <p>Aylin Carrera Soto
             <a href="https://github.com/AylinCarrera">Mi GitHub</a>
         </p>

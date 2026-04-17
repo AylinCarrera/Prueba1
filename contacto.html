@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Contacto</title>
 </head>
-
 <body>
     <header>
-        <img src="img/logo.png" width="auto" height="200px">
-        <h2 class="text-center">Formulario de Contacto</h2>
-        <div class="container mt-1">
-            <ul class="text-center">
-                <a href="index.html">Inicio</a>
-
-                <a href="servicios.html">Servicios</a>
-
-                <a href="cotizacion.html">Cotiza con nosotros</a>
-
-                <a href="contacto.html">Contacto</a>
+        <nav class=" navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cotizacion.html">Cotización</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
             </ul>
-            <h6 class="text-center">Si tienes alguna pregunta o necesitas más información ingresa tus datos. ¡Nos
-                pondremos en contacto contigo lo antes posible!</h6>
-        </div>
+        </nav>
     </header>
-    <main class="contenedor">
+    <main>
+        <h4 class="titulo">¡Nos contactamos contigo!</h4>
+        <h6 class="text-center">ingresa tus datos para contactarte</h6>
         <section>
             <form class="container mt-3">
                 <div class="mb-3">
@@ -44,11 +46,11 @@
                     <textarea class="form-control" name="mensaje"
                         placeholder="Escribe tu disponibilidad horaria para contactarte" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn-veterinaria">Enviar</button>
             </form>
         </section>
     </main>
-    <footer class="text-center mt-5">
+    <footer class="contenedor">
         <p>Aylin Carrera Soto
             <a href="https://github.com/AylinCarrera">Mi GitHub</a>
         </p>

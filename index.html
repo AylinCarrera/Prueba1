@@ -11,39 +11,72 @@
 
 <body>
     <header>
-        <img src="img/logo.png" width="auto" height="200px">
+        <nav class=" navbar navbar-expand-sm bg-light navbar-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cotizacion.html">Cotización</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="container mt-1">
-            <h1 class="text-center">Bienvenido a nuestro sitio web</h1>
-            <ul class="text-center">
-                <a href="index.html">Inicio</a>
-
-                <a href="servicios.html">Servicios</a>
-
-                <a href="cotizacion.html">Cotiza con nosotros</a>
-
-                <a href="contacto.html">Contacto</a>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
             </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mascota.jpg" class="d-block w-100" alt="Imagen de mascotas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bienvenido a nuestra clínica veterinaria</h5>
+                        <p>Donde el cuidado de tu mascota es nuestra prioridad.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mascota4.jpg" class="d-block w-100" alt="Imagen de mascotas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicios de calidad para tu mascota</h5>
+                        <p>Ofrecemos una amplia gama de servicios veterinarios para mantener a tu compañero peludo
+                            saludable
+                            y feliz.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mascota3.jpg" class="d-block w-100" alt="Imagen de mascotas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Atención personalizada</h5>
+                            <p>Nuestro equipo de veterinarios está comprometido a brindar atención personalizada y
+                                compasiva
+                                para cada mascota que atendemos.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
-
-        <img src="img/veterinaria.jpg" width="400px" height="400px">
-
-        <p class="text-justify mt-5">
-            Somos una pequeña veterinaria ubicada en el corazón de la ciudad, dedicada a brindar atención
-            de calidad a tus mascotas. Nuestro equipo de profesionales
-            apasionados se compromete a cuidar y proteger la salud de tus compañeros peludos.
-            Ofrecemos una amplia gama de servicios, desde consultas médicas hasta cirugías y cuidados preventivos,
-            todo en un ambiente cálido y acogedor. En nuestra veterinaria, tu mascota es parte de nuestra familia,
-            y nos esforzamos por proporcionar el mejor cuidado posible para garantizar su bienestar y felicidad.
-            ¡Ven a visitarnos y descubre cómo podemos cuidar de tus queridos amigos de cuatro patas!
-        </p>
+        
     </main>
-    <footer class="text-center mt-5">
+    <footer class="contenedor">
         <p>Aylin Carrera Soto
             <a href="https://github.com/AylinCarrera">Mi GitHub</a>
         </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
